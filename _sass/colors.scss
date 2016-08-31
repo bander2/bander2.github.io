@@ -1,0 +1,31 @@
+html {
+    color: $text-color;
+}
+
+a {
+    color: $primary-color;
+}
+
+body {
+    > header {
+        > h1 > a {
+            color: $primary-color;
+        }
+
+        p {
+            color: $text-coler-light;
+        }
+
+        > nav {
+            color: $text-coler-lighter;
+        }
+    }
+
+    main > footer {
+        color: $text-coler-light;
+    }
+}
+
+.post-meta {
+    color: $text-coler-light;
+}

@@ -1,0 +1,13 @@
+<article itemscope itemtype="https://schema.org/BlogPosting" class="post-teaser">
+  <span class="post-meta">
+    <time itemprop="datePublished" datetime="{{ post.date | date: '%FT%R' }}">
+      {{ post.date | date: "%b %-d, %Y" }}
+    </time>
+  </span>
+
+  <span itemprop="name" class="post-title">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+      {{ post.title | escape }}
+    </a>
+  </span>
+</article>

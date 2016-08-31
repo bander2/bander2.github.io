@@ -1,0 +1,86 @@
+html {
+    font-size: $mobile-font-size;
+    line-height:  $line-height-ratio;
+
+    @include tablet {
+        font-size: $tablet-font-size;
+    }
+
+    @include desktop {
+        font-size:    $base-font-size;
+    }
+}
+
+body {
+    font-family: $body-font-stack;
+
+    > header {
+        h1 {
+            @include verticle-rhythm(2rem, 0);
+
+            > a {
+                text-decoration: none;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        > h2 {
+            font-weight: normal;
+            @include verticle-rhythm(1rem);
+        }
+    }
+
+    > main > footer {
+        .rss-subscribe, .copyright {
+            @include verticle-rhythm(0.8rem, 0);
+        }
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $header-font-stack;
+}
+
+h1  {
+    @include verticle-rhythm(2.4rem);
+}
+
+// Posts have metadata that I want to show right under the title.
+.post h1 {
+    @include verticle-rhythm(2.4rem, 0);
+}
+
+h2  {
+    @include verticle-rhythm(2rem);
+}
+
+h3  {
+    @include verticle-rhythm(1.6rem);
+}
+
+p, pre, blockquote {
+    @include verticle-rhythm(1rem);
+}
+
+ul {
+    @include verticle-rhythm(1rem, 1, 1);
+}
+
+pre.highlight {
+    padding-left:  $line-height-base / 2;
+    padding-right: $line-height-base / 2;
+}
+
+a {
+    text-decoration: underline;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+nav a {
+    text-decoration: none;
+}

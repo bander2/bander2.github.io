@@ -1,0 +1,12 @@
+.post-list {
+    padding: 0;
+    list-style: none;
+
+    h2 {
+        margin-bottom: 0;
+    }
+
+    li {
+        @include verticle-rhythm(1rem);
+    }
+}

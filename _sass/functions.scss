@@ -1,0 +1,36 @@
+// $number ^ $exponent
+@function pow($number, $exponent) {
+    $value: 1;
+
+    @if $exponent > 0 {
+      @for $i from 1 through $exponent {
+        $value: $value * $number;
+      }
+    } @else if $exponent < 0 {
+      @for $i from 1 through -$exponent {
+        $value: $value / $number;
+      }
+    }
+
+  @return $value;
+}
+
+// Get the numeric value of a scale. For example, 2.4rem returns 2.4 and 22px
+// returns 22.
+@function parse-int($n) {
+    @return $n / ($n * 0 + 1);
+}
+
+// Convert px to rem.
+@function to-rem($scale) {
+    $unit:  unit($scale);
+    $value: parse-int($scale);
+
+    @if $unit == 'rem' {
+        @return $scale;
+    }
+
+    @else if $unit == 'px' {
+        @return $value / 16 * 'rem';
+    }
+}

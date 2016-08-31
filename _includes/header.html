@@ -1,0 +1,21 @@
+<h1 class="site-title" itemprop="name">
+  <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+</h1>
+
+{% if site.description %}
+  <p class="site-description" itemprop="description">
+    {{ site.description }}
+  </p>
+{% endif %}
+
+<nav>
+  {% include nav-item.html url="/" label="Home" %}
+
+  {% for node in site.pages %}
+    {% unless node.exclude_from_nav %}
+      {% if node.title %}
+        {% include nav-item.html url=node.url label=node.title %}
+      {% endif %}
+    {% endunless %}
+  {% endfor %}
+</nav>

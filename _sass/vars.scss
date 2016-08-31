@@ -1,0 +1,20 @@
+// Fonts
+$body-font-stack:   'Merriweather', Georgia, serif;;
+$header-font-stack: 'Roboto', sans-serif;
+
+// Colors
+$primary-color:      OrangeRed;
+$text-color:         #444;
+$text-coler-light:   lighten($text-color, 40%);
+$text-coler-lighter: lighten($text-color, 66%);
+
+// Layout
+$max-width:    960px;
+$tablet-width: 640px;
+
+// Rhythm
+$base-font-size:    18px;
+$tablet-font-size:  16px;
+$mobile-font-size:  14px;
+$line-height-ratio: 1.667;
+$line-height-base:  1rem * $line-height-ratio;

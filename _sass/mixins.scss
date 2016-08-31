@@ -1,0 +1,43 @@
+// Establish a verticle rhythm.
+@mixin verticle-rhythm($font-size, $bottom-rows: 1, $top-rows: 0, $use-height: false, $border: 0rem) {
+    // Convert everything to rems.
+    $font-size: to-rem($font-size);
+    $border: to-rem($border);
+    $multiplier: ceil($font-size / $line-height-base);
+
+    // How many lines will this font size take up?
+    $multiplier: ceil($font-size / $line-height-base);
+
+    @if $use-height { // layout elements.
+        $leftover: $line-height-base * $multiplier - $font-size;
+
+        height:        $font-size;
+        margin-top:    $line-height-base * $top-rows + $leftover / 2;
+        margin-bottom: $line-height-base * $bottom-rows + $leftover / 2;
+    } @else { // text elements.
+        font-size:     $font-size;
+        line-height:   $line-height-base * $multiplier;
+        margin-top:    $line-height-base * $top-rows;
+        margin-bottom: $line-height-base * $bottom-rows - $border;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: $max-width) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: $tablet-width) and (max-width: $max-width) {
+        @content;
+    }
+}
+
+@mixin clearfix {
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+}

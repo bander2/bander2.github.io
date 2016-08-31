@@ -1,0 +1,5 @@
+{% if include.url == page.url %}
+  <a href="{{ include.url | prepend: site.baseurl }}" class="active">{{ include.label }}</a>
+{% else %}
+  <a href="{{ include.url | prepend: site.baseurl }}">{{ include.label }}</a>
+{% endif %}
