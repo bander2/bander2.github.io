@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TASC: Let the Gerbils Assemble Your Project For You
+title: "TASC: Let the Gerbils Assemble Your Project For You"
 date: 2016-08-22 18:06:17 -0400
 tags: golang, devops
 ---
