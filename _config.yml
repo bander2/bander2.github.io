@@ -10,18 +10,14 @@ url:              "https://www.andersonproject.com"
 enforce_ssl:      "www.andersonproject.com"
 twitter_username: andersonpro79
 github_username:  hcpss-banderson
-
-# Build settings
-markdown:    kramdown
-highlighter: rouge
-
-permalink: /posts/:title.html
+timezone:         America/New_York
+markdown:         kramdown
+highlighter:      rouge
+permalink:        /posts/:title.html
+repository:       bander2/bander2.github.io
+gems:             ["jekyll-github-metadata"]
+exclude:          ["Gemfile", "Gemfile.lock"]
 
 kramdown:
   input: GFM
   syntax_highlighter: rouge
-
-repository: bander2/bander2.github.io
-
-gems:
-  - jekyll-github-metadata
