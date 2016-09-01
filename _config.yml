@@ -1,15 +1,18 @@
 title: Brendan Anderson
 email: bander2.imda@gmail.com
-description: A web development blog.
-baseurl: ""
-url: "https://www.andersonproject.com"
-enforce_ssl: "www.andersonproject.com"
+
+description: >
+  I'm a Web Developer who loves PHP, but also gets extra pumped about Ansible,
+  Docker, and Composer.
+
+baseurl:          ""
+url:              "https://www.andersonproject.com"
+enforce_ssl:      "www.andersonproject.com"
 twitter_username: andersonpro79
-github_username: hcpss-banderson
-author: Brendan Anderson
+github_username:  hcpss-banderson
 
 # Build settings
-markdown: kramdown
+markdown:    kramdown
 highlighter: rouge
 
 permalink: /posts/:title.html
