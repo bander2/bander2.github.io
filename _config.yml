@@ -2,7 +2,8 @@ title: Brendan Anderson
 email: bander2.imda@gmail.com
 description: A web development blog.
 baseurl: ""
-url: "https://bander2.github.io" # the base hostname & protocol for your site
+url: "https://www.andersonproject.com"
+enforce_ssl: "www.andersonproject.com"
 twitter_username: andersonpro79
 github_username: hcpss-banderson
 author: Brendan Anderson
