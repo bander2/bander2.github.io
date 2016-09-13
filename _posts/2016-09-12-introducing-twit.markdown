@@ -9,8 +9,9 @@ Stop using [sed](https://www.gnu.org/software/sed/manual/sed.html) and
 are human beings for God's sake! You don't have to pretend that you like writing
 regular expressions!
 
-Because now you have TWIT, the CLI **T**ool for **W**r**I**ting **T**emplates.
-You can just template those file *without* a template engine.
+Because now you have [TWIT](https://github.com/bander2/twit), the CLI **T**ool
+for **W**r**I**ting **T**emplates. You can just template those file *without* a
+template engine.
 
 For example; let's say I want to provision docker image with a Drupal install.
 I want the database configuration to be configurable at runtime. In the end,
