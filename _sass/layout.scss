@@ -97,3 +97,7 @@ body > header > nav {
 body > main > footer {
     @include verticle-rhythm(1rem, 1, 2);
 }
+
+body .post img {
+    max-width: 100%;
+}
