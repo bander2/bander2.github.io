@@ -1,0 +1,23 @@
+.post img {
+    max-width: 100%;
+}
+
+.post-teaser {
+    display: flex;
+    flex-direction: column-reverse;
+    @include verticle-rhythm(1rem, 1);
+
+    @include tablet {
+        flex-direction: row;
+        @include verticle-rhythm(1rem, 0);
+    }
+
+    @include desktop {
+        flex-direction: row;
+        @include verticle-rhythm(1rem, 0);
+    }
+
+    .post-meta {
+        margin-right: $line-height-base / 4;
+    }
+}
