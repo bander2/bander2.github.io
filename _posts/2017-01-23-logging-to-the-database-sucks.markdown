@@ -29,10 +29,12 @@ If you don't like that, it's ok. You can template the log lines by overriding
 the file_log.mustache template in your theme. For example you could format your
 logs as csv rows:
 
+{%raw%}
 ```mustache
 {{! theme/logstore_file/templates/file_log.mustache }}
 {{{ eventname }}},{{{ component }}},{{{ action }}}
 ```
+{%endraw%}
 
 gives you:
 
