@@ -31,14 +31,14 @@ logs as csv rows:
 
 {%raw%}
 ```mustache
-{{! theme/logstore_file/templates/file_log.mustache }}
+{{! yourtheme/logstore_file/templates/file_log.mustache }}
 {{{ eventname }}},{{{ component }}},{{{ action }}}
 ```
 {%endraw%}
 
 gives you:
 
-```csv
+```
 "\\core\\event\\calendar_event_created","core",created"
 "\\core\\event\\course_viewed",core",viewed"
 "\\core\\event\\message_sent","core",sent"
