@@ -4,6 +4,8 @@ title: About
 permalink: /about.html
 ---
 
+![Brendan Anderson](/assets/brendan.jpg)
+
 Hello, my name is Brendan Anderson. I am a husband, father, and web developer
 living in Ellicott City Maryland.
 

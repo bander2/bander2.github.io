@@ -1,0 +1,20 @@
+.page {
+    &.about section img[src="/assets/brendan.jpg"] {
+        max-width: 100%;
+        width: 180px;
+        float: right;
+        margin: 0 0 1rem 1rem;
+
+        @include tablet {
+            width: 200px;
+            float: right;
+            margin: 0 0 1rem 1rem;
+        }
+
+        @include desktop {
+            width: 250px;
+            float: right;
+            margin: 0 0 1rem 1rem;
+        }
+    }
+}
