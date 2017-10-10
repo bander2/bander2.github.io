@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Drupal 8 Development with Docker"
-date: 2017-04-26 12:08:32 -400
+date: "2017-04-26 12:08:32 -400"
 tags: drupal, devops, docker
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Logging to the Database Sucks"
-date: 2017-01-23 19:07:00 -0400
+date: "2017-01-23 19:07:00 -0400"
 tags: moodle
 ---
 Most PHP web applications log events to the database. Usually that's ok but I

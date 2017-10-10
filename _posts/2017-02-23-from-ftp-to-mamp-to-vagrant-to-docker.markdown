@@ -1,7 +1,7 @@
 ---
 layout: post
 title: From FTP to MAMP to Vagrant to Docker
-date: 2017-02-23 18:06:17 -0400
+date: "2017-02-23 18:06:17 -0400"
 tags: devops, mamp, docker, vagrant
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "TASC: Let the Gerbils Assemble Your Project For You"
-date: 2016-08-22 18:06:17 -0400
+date: "2016-08-22 18:06:17 -0400"
 tags: golang, devops
 ---
 Sometimes you just need a way to assemble some source code from various sources.

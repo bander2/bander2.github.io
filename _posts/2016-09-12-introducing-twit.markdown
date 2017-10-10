@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Introducing TWIT: CLI Templating for Humans"
-date: 2016-09-12 21:01:00 -0400
+date: "2016-09-12 21:01:00 -0400"
 tags: golang, devops
 ---
 Stop using [sed](https://www.gnu.org/software/sed/manual/sed.html) and
